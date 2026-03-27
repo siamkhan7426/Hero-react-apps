@@ -4,8 +4,8 @@ import MainLayout from "../MainLayout/MainLayout";
 import Error from "../Pages/Error/Error";
 import AppList from "../Component/App/AppList";
 import ShowAllbtn from "../Component/App/ShowAllBtn/ShowAllbtn";
-import AppDetailsPage from "../Pages/AppDetailsPage/AppDetailsPage";
-import axios from "axios";
+// import AppDetailsPage from "../Pages/AppDetailsPage/AppDetailsPage";
+import AppDetails from "../Pages/AppDetailsPage/AppDetails";
 
 
 
@@ -49,7 +49,8 @@ export const router = createBrowserRouter([
               }
               return res.json();
             },
-            Component:AppDetailsPage,
+            Component:AppDetails
+            // Component:AppDetailsPage,
            }
     ]
   },
