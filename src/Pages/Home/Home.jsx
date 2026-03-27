@@ -11,11 +11,11 @@ const Home = () => {
    const data = useLoaderData();
    
     return (
-        <div className=' my-4 space-x-4'>
+        <main className=' my-4 space-x-4'>
             <Banner/>
             <AppCardSecation data={data}/>
             <ShowAllbtn/>
-        </div>
+        </main>
     );
 };
 

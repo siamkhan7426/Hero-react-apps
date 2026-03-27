@@ -2,7 +2,6 @@ import React from 'react';
 import AppCard from './AppCard';
 
 const AppCardSecation = ({data}) => {
-    console.log( data)
     return (
         <section className='mt-10 w-11/12 mx-auto'>
             

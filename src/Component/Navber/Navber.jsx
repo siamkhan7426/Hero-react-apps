@@ -28,10 +28,10 @@ const Navber = () => {
        </div>
       </ul>
     </div>
-    <div className='flex items-center justify-center'>
+    <Link to="/" className='flex items-center justify-center'>
     <img className='w-10 h-auto' src={Logo} />
     <span className='text-xl font-bold text-purple-500'>HERO.IO</span>
-</div>
+</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 ">

@@ -1,6 +1,6 @@
 import { useLoaderData, useParams } from 'react-router';
 import { useState } from "react";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 
 import {
   BarChart,
@@ -43,9 +43,9 @@ import {
         <img
           src={app.image}
           alt={app.title}
-          className="w-32 h-32 rounded-xl shadow"
+          className="w-44 h-44 rounded-xl shadow"
         />
-
+         
         {/* Info */}
         <div>
           <h1 className="text-xl font-bold">{app.title}</h1>
@@ -56,9 +56,12 @@ import {
 
             <div>
               <p className="text-green-500 text-xl">⬇</p>
-              <p className="font-semibold">
-                {(app.downloads / 1000000).toFixed(1)}M
-              </p>
+              <span>
+
+                    {new Intl.NumberFormat("en-US",{
+                      notation: "compact"
+                    }).format(app.downloads)}
+                    </span>
               <p className="text-xs text-gray-400">Downloads</p>
             </div>
 
@@ -89,6 +92,7 @@ import {
           >
             {installed ? "Installed" : "Install"}
           </button>
+          <ToastContainer />
         </div>
       </div>
 

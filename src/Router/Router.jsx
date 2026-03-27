@@ -4,7 +4,6 @@ import MainLayout from "../MainLayout/MainLayout";
 import Error from "../Pages/Error/Error";
 import AppList from "../Component/App/AppList";
 import ShowAllbtn from "../Component/App/ShowAllBtn/ShowAllbtn";
-// import AppDetailsPage from "../Pages/AppDetailsPage/AppDetailsPage";
 import AppDetails from "../Pages/AppDetailsPage/AppDetails";
 
 
@@ -16,7 +15,6 @@ export const router = createBrowserRouter([
     errorElement: <Error/>,
     children:[
         { index: true,
-          path:"/",
           loader: async ()=>{
             const res = await fetch("/app.json");
             if(!res.ok){
@@ -50,7 +48,7 @@ export const router = createBrowserRouter([
               return res.json();
             },
             Component:AppDetails
-            // Component:AppDetailsPage,
+            
            }
     ]
   },

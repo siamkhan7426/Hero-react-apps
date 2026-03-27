@@ -4,7 +4,7 @@ import Rating from '../../assets/ratings.png';
 import Downloading from '../../assets/downloads.png';
 
 const AppCard = ({card}) => {
-  const {id,title,companyName,image,description,size,downloads,reviews,ratingAvg,ratings} = card
+  const {id,title,image,downloads,ratingAvg,} = card
     return (
         
         <section>
@@ -14,12 +14,17 @@ const AppCard = ({card}) => {
                      <img className=" h-48 object-cover hover:scale-105 transition-all hover:-rotate-2" src={image}/>
                    </figure>
                     </div>
-                <p className='text-sm mt-2'>{title}</p>
+                <p className='text-xl font-semibold mt-2'>{title}</p>
                <div className='flex items-center justify-between mt-2'>
                 {/* download */}
                  <div className='flex items-center gap-2 bg-[#F1F5E8] px-3 rounded-full text-green-500'>
                   <img className='w-5' src={Downloading}/>
-                  <span>{downloads}</span>
+                  <span>
+
+                    {new Intl.NumberFormat("en-US",{
+                      notation: "compact"
+                    }).format(downloads)}
+                    </span>
                  </div>
                  {/* rating */}
                 <div className='flex items-center gap-2 bg-[#FFF0E1] text-amber-400 px-3 rounded-full'>
