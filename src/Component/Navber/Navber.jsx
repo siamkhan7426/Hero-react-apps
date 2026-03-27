@@ -45,7 +45,7 @@ const Navber = () => {
   <div>
        <button className='btn flex items-center gap-2 px-5 py-2 rounded-lg 
                  bg-gradient-to-r from-[#632EE3] to-[#9F62F2] 
-        text-white font-semibold shadow-md hover:opacity-90 transition '><a className='flex items-center justify-center gap-2' href=""><FaGithub />Contribute</a>
+        text-white font-semibold shadow-md hover:opacity-90 transition '><a className='flex items-center justify-center gap-2' href="https://github.com/siamkhan7426" target='_blank'><FaGithub />Contribute</a>
         </button>
   </div>
 </div>
