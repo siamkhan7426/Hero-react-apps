@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router';
 import Logo from '../../assets/logo.png'
 import { FaGithub } from 'react-icons/fa';
+import { NavLink } from 'react-router';
 
 const Navber = () => {
     const navLink = <>
-    <Link to="/"><li>Home</li></Link>
-    <Link to="/apps"><li>Apps</li></Link>
-    <Link to="/installation"><li>Installation</li></Link>
+    <NavLink  to="/">Home</NavLink>
+    <NavLink to="/apps">Apps</NavLink>
+    <NavLink to="/installation">Installation</NavLink>
     
     </>
     return (
@@ -20,7 +21,7 @@ const Navber = () => {
       <ul
         tabIndex="-1"
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-       <div className='text-2xl font-semibold flex flex-col  gap-5 items-center justify-center'>
+       <div className='text-2xl font-semibold flex flex-col  gap-5 items-center justify-center '>
          {
             navLink
         }
@@ -34,7 +35,7 @@ const Navber = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 ">
-      <div className='text-xl font-semibold flex gap-5 items-center justify-center'>
+      <div className='text-xl font-semibold flex gap-5 items-center justify-center [&_a.active]:text-purple-600 [&_a.active]:underline'>
         {
         navLink
       }
