@@ -10,7 +10,7 @@
 - Do minimum 5 commits to your github Repository
 - Give a meaning full name to your application
 - Make Sure on Production Application is error Free
-- Add a Readme.md with App Name , Description & Technologies
+- Add a Readme.md with App Name , Description & Technologies // baki
 
 ---
 
@@ -20,14 +20,14 @@
 
 #### Header
 
-- The header must include:
+- The header must include: (done)
   - A logo.on clicking it user will be navigated to home page.
   - A navigation bar with links [ `home` , `apps` , `installation` ] and active route indication.
   - A `Contribution` button as Figma linking to the your GitHub profile.
 
 #### Footer
 
-- Design a custom footer using your own creativity and style.
+- Design a custom footer using your own creativity and style. (done)
 
 #### Data
 
@@ -57,13 +57,13 @@
 
 ## 2. 🏠 Home Page
 
-#### Banner
+#### Banner (done)
 
 - Must contain a center-aligned heading, text, and two buttons.
 - “App Store” button will redirect to the App Store.
 - “Play Store” button will redirect to the Play Store.
 
-#### States Section
+#### States Section {done}
 
 - Must contain three state cards as shown in Figma.
 
@@ -86,7 +86,7 @@
 
 - Include a title and subtitle following the Figma design.
 
-#### Search and States
+#### Search and States (Baki)
 
 - Display the total number of apps on the left and a search bar on the right.
 - `Implement live search functionality`
@@ -127,7 +127,7 @@
 
 ---
 
-## 5. Error Page & Others
+## 5. Error Page & Others (done)
 
 - Create a custom error page for invalid routes.
 
